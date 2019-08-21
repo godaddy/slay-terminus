@@ -1,0 +1,62 @@
+{
+  "name": "slay-terminus",
+  "version": "0.0.1",
+  "description": "Slay preboot providing shutdown and Kubernetes readiness / liveness checks with terminus.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "scripts": {
+    "coverage": "nyc mocha --recursive lib",
+    "lint": "eslint-godaddy --max-warnings 0 --ignore-pattern /coverage/ ./",
+    "release": "standard-version",
+    "test": "mocha --recursive lib"
+  },
+  "keywords": [
+    "slay",
+    "terminus",
+    "kubernetes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:godaddy/slay-terminus.git"
+  },
+  "author": "GoDaddy Operating Company, LLC",
+  "maintainer": "Jacopo Daeli <jacopo.daeli@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.2.1",
+    "eslint-config-godaddy": "^4.0.0",
+    "eslint-plugin-json": "^1.4.0",
+    "eslint-plugin-mocha": "^6.0.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "sinon": "^7.4.1",
+    "standard-version": "^7.0.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "reporter": [
+      "cobertura",
+      "json-summary",
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "exclude": [
+      "coverage/",
+      "**/*.test.js",
+      "index.js"
+    ],
+    "lines": 4,
+    "functions": 4,
+    "all": true,
+    "cache": false,
+    "temp-directory": "./coverage/.nyc_output"
+  },
+  "dependencies": {
+    "@godaddy/terminus": "^4.1.2"
+  }
+}
