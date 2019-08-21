@@ -1,0 +1,7 @@
+**/*.test.js
+.eslintrc
+*.log
+npm-debug.log*
+coverage
+node_modules/
+.github/
