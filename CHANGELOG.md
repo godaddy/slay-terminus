@@ -2,15 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.0.3](https://github.com/godaddy/slay-terminus/compare/v0.0.2...v0.0.3) (2020-01-28)
+## [1.0.0](https://github.com/godaddy/slay-terminus/compare/v0.0.2...v0.0.3) (2020-03-13)
 
+This is moving to 1.0.0 not because of breaking changes but to move us into post-release versioning.
+
+### Features
+
+* Add `closing` and `shutdown` interceptors
+
+
+## [0.0.3](https://github.com/godaddy/slay-terminus/compare/v0.0.2...v0.0.3) (2020-01-28)
 
 ### Bug Fixes
 
 * **security:** upgrade handlebars to version 4.4.x ([#4](https://github.com/godaddy/slay-terminus/issues/4)) ([33d6059](https://github.com/godaddy/slay-terminus/commit/33d6059e6e2cbb126674381d647b39bdb4976db4))
 
-### 0.0.2 (2019-09-03)
 
+## 0.0.2 (2019-09-03)
 
 ### Bug Fixes
 
