@@ -8,7 +8,8 @@
     "coverage": "nyc mocha --recursive lib",
     "lint": "eslint-godaddy --max-warnings 0 --ignore-pattern /coverage/ ./",
     "release": "standard-version",
-    "test": "mocha --recursive lib"
+    "test": "mocha --recursive lib",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "slay",
@@ -30,10 +31,11 @@
     "eslint": "^6.2.1",
     "eslint-config-godaddy": "^4.0.0",
     "eslint-plugin-json": "^1.4.0",
-    "eslint-plugin-mocha": "^6.0.0",
+    "eslint-plugin-mocha": "^5.3.0",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "sinon": "^7.4.1",
+    "sinon-chai": "^3.5.0",
     "standard-version": "^7.0.0"
   },
   "nyc": {
