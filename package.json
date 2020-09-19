@@ -4,11 +4,14 @@
   "description": "Slay preboot providing shutdown and Kubernetes readiness / liveness checks with terminus.",
   "main": "lib/index.js",
   "module": "lib/index.js",
+  "types": "typings/index.d.ts",
   "scripts": {
     "coverage": "nyc mocha --recursive lib",
     "lint": "eslint-godaddy --max-warnings 0 --ignore-pattern /coverage/ ./",
     "release": "standard-version",
-    "test": "mocha --recursive lib"
+    "test": "npm run test:mocha && npm run test:types",
+    "test:mocha": "mocha --recursive lib",
+    "test:types": "tsc --esModuleInterop --lib es2015,dom --noEmit ./typings/*.ts"
   },
   "keywords": [
     "slay",
@@ -34,7 +37,8 @@
     "mocha": "^8.1.1",
     "nyc": "^14.1.1",
     "sinon": "^7.4.1",
-    "standard-version": "^9.0.0"
+    "standard-version": "^9.0.0",
+    "typescript": "^4.0.3"
   },
   "nyc": {
     "check-coverage": true,
