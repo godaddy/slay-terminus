@@ -57,6 +57,6 @@
     "temp-directory": "./coverage/.nyc_output"
   },
   "dependencies": {
-    "@godaddy/terminus": "^4.11.1"
+    "@godaddy/terminus": "^4.11.2"
   }
 }
