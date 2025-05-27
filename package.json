@@ -2,6 +2,7 @@
   "name": "slay-terminus",
   "version": "0.0.3",
   "description": "Slay preboot providing shutdown and Kubernetes readiness / liveness checks with terminus.",
+  "type": "commonjs",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "scripts": {
